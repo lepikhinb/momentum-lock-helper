@@ -1,7 +1,7 @@
 {
   "name": "momentum-lock",
   "description": "Handle Laravel authorizations on the front-end",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "scripts": {
     "dev": "vite",
     "build": "npm run lint && npm run format && vite build && tsc --declaration --emitDeclarationOnly",
@@ -25,13 +25,13 @@
     "dist"
   ],
   "type": "module",
-  "main": "./dist/momentum-lock.umd.js",
+  "main": "./dist/momentum-lock.umd.cjs",
   "module": "./dist/momentum-lock.js",
   "types": "./dist/types/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/momentum-lock.js",
-      "require": "./dist/momentum-lock.umd.js"
+      "require": "./dist/momentum-lock.umd.cjs"
     }
   },
   "devDependencies": {
