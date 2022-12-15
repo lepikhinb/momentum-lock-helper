@@ -1,0 +1,50 @@
+{
+  "name": "momentum-lock",
+  "description": "Handle Laravel authorizations on the front-end",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run lint && npm run format && vite build && tsc --declaration --emitDeclarationOnly",
+    "lint": "eslint \"src/**\" --fix",
+    "format": "prettier src/ --write"
+  },
+  "keywords": [
+    "laravel",
+    "inertia",
+    "vue",
+    "permissions",
+    "authorization"
+  ],
+  "author": "Boris Lepikhin<https://twitter.com/lepikhinb>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lepikhinb/momentum-lock-helper.git"
+  },
+  "homepage": "https://github.com/lepikhinb/momentum-lock#readme",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "./dist/momentum-lock.umd.js",
+  "module": "./dist/momentum-lock.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/momentum-lock.js",
+      "require": "./dist/momentum-lock.umd.js"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-define-config": "^1.7.0",
+    "eslint-plugin-node": "^11.1.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4",
+    "vite": "^3.1.8",
+    "vite-plugin-eslint": "^1.8.1"
+  }
+}
