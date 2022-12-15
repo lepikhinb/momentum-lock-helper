@@ -7,7 +7,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
       name: "Momentum Lock",
-      fileName: `momentum-lock-helper`,
+      fileName: `momentum-lock`,
     },
   },
   plugins: [eslintPlugin()],

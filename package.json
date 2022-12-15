@@ -1,7 +1,7 @@
 {
   "name": "momentum-lock",
   "description": "Handle Laravel authorizations on the front-end",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "scripts": {
     "dev": "vite",
     "build": "npm run lint && npm run format && vite build && tsc --declaration --emitDeclarationOnly",
